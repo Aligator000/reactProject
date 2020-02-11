@@ -8,7 +8,6 @@ import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
 
-
 class Column extends React.Component {
 
   state = {
