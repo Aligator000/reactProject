@@ -6,6 +6,7 @@ import Card from '../Card/Card';
 import Icon from '../Icon/Icon';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
+import { settings } from '../../data/dataStore';
 
 
 class Column extends React.Component {
@@ -14,6 +15,10 @@ class Column extends React.Component {
     title: PropTypes.node,
     icon: PropTypes.node,
     cards: PropTypes.node,
+  }
+
+  static defultProps = {
+    icon: settings.defaultColumnIcon,
   }
 
   render() {
